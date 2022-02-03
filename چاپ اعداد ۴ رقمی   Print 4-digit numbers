@@ -1,0 +1,25 @@
+#include <iostream.h>
+#include <conio.h>
+
+void main()
+{
+ int i,flag,m,n;
+ clrscr();
+ for (i=1000;i<=9999;i++)
+ {
+ n=i;
+ flag=1;
+    while(n!=0 && flag)
+    {
+      m=n%10;
+      if (!m)
+     flag=0;
+      n=n/10;
+    }
+  if (flag)
+    cout<<i<<endl;
+
+  }
+  getch();
+
+}
